@@ -1,0 +1,80 @@
+.content {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: rgb(233, 245, 201);
+}
+
+.header {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.elements {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.face1 {
+  box-sizing: border-box;
+  padding: 20px
+}
+.face2 {
+  background: #111;
+  transition: .3s;
+}
+.card .face.face1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.card__title {
+  width: 280px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 90px;
+}
+
+.card:first-child .face.face2 {background: url(../images/1.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(2) .face.face2 {background: url(../images/2.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(3) .face.face2 {background: url(../images/3.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(4) .face.face2 {background: url(../images/4.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(5) .face.face2 {background: url(../images/5.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(6) .face.face2 {background: url(../images/8.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(7) .face.face2 {background: url(../images/9.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+.card:nth-child(8) .face.face2 {background: url(../images/10.jpg); background-repeat: no-repeat; background-position: center; object-fit: cover;  box-sizing: border-box; overflow: hidden; background-size: 300px 300px;}
+
+.card:first-child:hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(3):hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(2):hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(4):hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(5):hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(6):hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(7):hover .face.face2 {height: 0px; opacity: 0;}
+.card:nth-child(8):hover .face.face2 {height: 0px; opacity: 0;}
